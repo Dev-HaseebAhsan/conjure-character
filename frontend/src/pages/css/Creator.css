@@ -1,0 +1,384 @@
+/* General CSS */
+:root{
+  --bg1: #101018;
+  --bg2: #B83D6E;
+  --primary: #7C113C;
+  --primary-accent1: #841f4d;
+  --primary-accent2: #9b2a5d;
+  --secondary: #434343;
+  --secondary-accent: #5a5959;
+  --text-color: #dadce1;
+  --speed: 500ms;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+p:hover{
+  cursor: default;
+}
+
+.Creator{
+	background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  font-size: 1rem;
+}
+
+/* Navigation Bar */
+.navbar{
+	display: flex;
+	align-items: center;
+	background-color: var(--bg1);
+  box-shadow: 0 0 25px black;
+	width: 100%;
+	height: 80px;
+}
+.navbar .navbar-container{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin: 0 30px;
+}
+.navbar .navbar-container img{
+	width: 200px;
+}
+.navbar .navbar-container ul{
+	width: 100%;
+	text-align: right;
+}
+.navbar .navbar-container li{
+	display: block;
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: 700;
+	display: inline-block;
+	list-style: none;
+	margin: 5px 20px 5px 30px;
+}
+.navbar .navbar-container .icon{
+	margin: 3px 5px -3px 0;
+}
+
+.score{
+  background-color: var(--secondary);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.score-table{
+  background-color: var(--secondary-accent);
+  display: grid;
+  grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
+  grid-template-rows: 8vh 8vh 8vh 8vh 8vh 8vh 8vh;
+  margin: 20px 5px 20px 45px;
+  padding: 15px;
+  border-width: 1px;
+  border-radius: 10px;
+  border: solid;
+  border: black;
+  box-shadow: 0 0 20px black;
+}
+
+.table-item {
+  border: 1px solid black;
+  padding-top: 2vh;
+  text-align: center;
+}
+
+.stats{
+  display: flex;
+  flex-direction: row;
+  margin: 5px 50px;
+  justify-content: center;
+}
+
+.main-info{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 50px 0 0 0;
+}
+
+.lower{
+  display: flex;
+  flex: .5;
+  padding-bottom: 10px;
+}
+
+.creator-section{
+  background-color: var(--secondary-accent);
+  padding: 20px 10px 20px 10px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  box-shadow: 0 0 20px black;
+}
+
+.creator-char-art{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.race-art{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.creator-section .name{
+  background-color: var(--secondary);
+  border: 1px solid black;
+  text-align: center;
+  padding: 7px;
+  margin: 7px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+
+.creator-section .input{
+  background-color: var(--secondary);
+  border: 1px solid black;
+  text-align: center;
+  padding: 7px 50px;
+  margin: 7px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.creator-section .class-select{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-button{
+  border-radius: 50%;
+  background-color: var(--secondary);
+  border: solid;
+  border-width: 1px;
+  border-color: black;
+  width: 35px;
+  height: 35px;
+  line-height: 0.9;
+  color: white;
+  vertical-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+.small-button:hover{
+  border-color: white;
+}
+
+.dropdown-display{
+  text-align: left;
+}
+
+.lower-grid{
+  display: grid;
+  grid-template-columns: 24vw 24vw 24vw;
+  gap: 20px;
+  justify-content: center;
+}
+
+.lower-section{
+  background-color: var(--secondary-accent);
+  border-radius: 20px;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  box-shadow: 0 0 20px black;
+}
+
+.class-template{
+  display: inline-block;
+}
+
+.class-item{
+  display: flex;
+  flex-direction: row;
+  background-color: var(--secondary-accent);
+  text-align: center;
+  padding: 2px 0px;
+  margin: 2px;
+  border-radius: 20px;
+  font-weight: bold;
+  align-items: center;
+  height: 125px;
+  white-space: nowrap;
+}
+
+.race-item{
+  display: flex;
+  flex-direction: row;
+  background-color: var(--secondary-accent);
+  justify-content: right;
+  padding-top: 20px;
+  padding: 7px 0px;
+  margin: 7px;
+  border-radius: 20px;
+  font-weight: bold;
+  align-items: center; 
+  height: 125px;
+  white-space: nowrap;
+  padding-right: 50px;
+}
+
+.added-name{
+  margin: 0px 30px;
+  text-align: center;
+  margin-top: 4px;
+  border-width: 2px;
+  border-radius: 10px;
+  width: 60px;
+  height: 30px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.level{
+  text-align: center;
+  border: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  border-color: black;
+  width: 30px;
+  height: 30px;
+  background-color: var(--secondary);
+  padding-top: 2px;
+}
+
+.lvl-adjust{
+  padding: 10px;
+  display:flex;
+  flex-direction: row;
+  text-align: center;
+  font-weight: lighter;
+  margin-left: 40px
+}
+
+.upper-char-info{
+  margin-bottom: 0px;
+}
+
+.character-status{
+  display: flex;
+  flex-direction: row;
+  background-color: var(--secondary-accent);
+  justify-content: center;
+  padding: 7px 0px;
+  margin: 7px;
+  border-radius: 20px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.status-item{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  padding: 10px;
+  align-items: center;
+  height: 125px;
+
+}
+
+.hp-icon{
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  color: black;
+  position: relative;
+}
+
+.status-item .hp-num{
+  top: 6px;
+  left: 10px;
+  position: absolute;
+}
+
+.bar{
+  /*bar with % */
+  margin: 5px;
+  height: 25px;
+  width: 200px;
+  margin: 0%;
+  padding: 0%;
+  position: relative;
+  border-width: 1px;
+  border: solid;
+  color: black;
+}
+
+.mana{
+  background-color: rgb(191, 173, 230)
+}
+
+.hp{
+  background-color: rgb(201, 253, 188);
+}
+
+.status-item .hp-bar{
+  background-color: rgb(50, 168, 50);
+  /*bar with % */
+  margin: 5px;
+  height: 20px;
+  position: absolute;
+  top: -5px; 
+  left: -5px;
+  width: 20%;
+  color: black;
+  opacity: 50%;
+}
+
+.status-item .hp-die{
+  /*use die bg*/
+  margin: 5px;
+  position: relative;
+} 
+
+.status-item .hp-die .heal{
+  position: absolute;
+  padding: 20px;
+  left: 0px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.status-item .mana-num{
+  /* Amount of Spell Slots */
+  margin: 4px 6px 0 0;
+  font-weight: 500;
+
+}
+
+.status-item .mana-bar{
+  background-color: rgb(0, 0, 255);
+  /*bar with % */
+  margin: 5px;
+  height: 20px;
+  position: absolute;
+  top: -5px; 
+  left: -5px;
+  width: 80%;
+  color: black;
+  opacity: 50%;
+}
+
+.status-item .ac{
+  /* based on Armor */
+  margin: 5px;
+  position: relative;
+}
+
+.ac-num{
+  position: absolute;
+  top: 6px;
+  left: 10px;
+}
